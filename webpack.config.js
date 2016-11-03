@@ -32,6 +32,14 @@ module.exports = {
                 }
             },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
+            {test: /\.json$/,   loader: 'json-loader'},
+            { test: /\.svg$/,  loader: "url-loader?limit=10000&mimetype=image/svg+xml" },s
         ]
-    }
+    },
+    resolve:{
+        extensions:['','.js','.json','.css','.less'],
+        modulesDirectories: [
+            'node_modules'
+        ]
+    },
 }

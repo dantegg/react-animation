@@ -2,8 +2,9 @@
  * Created by dantegg on 2016/11/3.
  */
 import TweenOne from 'rc-tween-one';
+import React from 'react'
 
-class Demo extends React.Component {
+class Animate extends React.Component {
 
     constructor() {
         super(...arguments);
@@ -13,10 +14,12 @@ class Demo extends React.Component {
         return (
             <TweenOne
                 animation={{ left: '20%', yoyo: true, repeat: -1, duration: 1000 }}
-                paused={this.props.paused}
                 style={{ left: '-20%' }}
                 className="code-box-shape"
             />
         );
     }
 }
+
+
+export default Animate
