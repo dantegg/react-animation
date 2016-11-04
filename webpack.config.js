@@ -33,6 +33,7 @@ module.exports = {
             },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             {test: /\.json$/,   loader: 'json-loader'},
+            { test: /\.png$/, loader: "url-loader?mimetype=image/png" },
             { test: /\.svg$/,  loader: "url-loader?limit=10000&mimetype=image/svg+xml" },
         ]
     },
